@@ -3,7 +3,6 @@ use MooseX::Declare;
 role PleasureChicken::Schema::Role::WithTags {
     use PleasureChicken::Schema::Types qw(Tag Set);
     use KiokuDB::Util qw(weak_set);
-    use namespace::autoclean;
 
     has 'tag_set' => (
         is       => 'ro',

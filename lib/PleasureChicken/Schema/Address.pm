@@ -3,7 +3,6 @@ use MooseX::Declare;
 class PleasureChicken::Schema::Address with KiokuDB::Role::ID with KiokuDB::Role::Immutable {
     use PleasureChicken::Schema::Types qw(PlainEmailAddress);
     use MooseX::Types::Moose qw(Str);
-    use namespace::autoclean;
 
     has 'address' => (
         is       => 'ro',

@@ -5,7 +5,6 @@ class PleasureChicken::Schema::Tag {
     use PleasureChicken::Schema::Types qw(Taggable Set);
     use MooseX::Types::Moose qw(Str);
     use KiokuDB::Util qw(set);
-    use namespace::autoclean;
 
     has 'name' => (
         is       => 'ro',
